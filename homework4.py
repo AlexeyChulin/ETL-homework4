@@ -13,7 +13,7 @@ t0=time.time()
 # NB: needs mysqlclient to be installed for connecting to mysql. Run `pip install mysqlclient`. 
 # If pip fails to install mysqlclient, try this:
 # https://stackoverflow.com/questions/76585758/mysqlclient-cannot-install-via-pip-cannot-find-pkg-config-name-in-ubuntu
-engine = create_engine("mysql://alexey:astron93@localhost:3306/spark")
+engine = create_engine("mysql://alexey:password@localhost:3306/spark")
 con = engine.connect()
 print(con) 
 # sql.execute('create table if not exists test(a int, b int) engine=InnoDB', con) # just test of connection
